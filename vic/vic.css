@@ -7,6 +7,8 @@
 .SecOne{
     background: #1E71FF;
     color:whitesmoke;
+    background-size: cover;
+    height: 100%;
 }
 a{
     color: whitesmoke;
@@ -22,7 +24,8 @@ a{
 
 }
 .main{
-    font-size: 34.6px;
+    font-size: 26px;
+    
 }
 .nav-links a{
     text-decoration: none;
@@ -34,20 +37,20 @@ a{
 }
 .nav-links li{
     margin: 0 30px;
-    font-size: 18.66px;
+    font-size: 14px;
 }
 .header-content{
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 200px 50px ;
+    justify-content: space-around;
+    padding: 190px 50px ;
 }
 .link a{
-    font-size: 22;
+    font-size: 16px;
     text-align: center;
     text-decoration: none;
     padding: 15px 50px;
-    border-radius: 80px;
+    border-radius: 70px;
 }
 .linkOne{
     background-color: whitesmoke;
@@ -60,18 +63,194 @@ a{
 
 }
 .sideNav{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .sideNav h1{
-    font-size: 100px; 
+    font-size: 75px; 
     padding-bottom: 40px;
 }
 .sideNav h4{
     font-size: 18px;
-    padding-bottom: 87px;
+    padding-bottom: 80px;
 }
 img{
-    width: 780px;
-    height: 857px;
+    width: 585px;
+    height: 643px;
     margin: 0 30px;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width:40px;
+    height:35px;
+    display:none;
+}
+.sectwo{
+    background-color: #f5f5f5;
+    width: 100%;
+    text-align: center;
+    padding:100px;
+}
+.sectwo h1{
+    font-size: 45px;
+    color: #2B353E;
+}
+.sectwo p{
+    font-size: 18px;
+    padding:30px 0 40px;
+    color: #2B353EB2 70%;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.img2{
+    display: block;
+    margin: 0 auto;
+    width: 1061px;
+    height: 663px;
+}
+
+.section3{
+    width: 100%;
+    background: #1E71FF1A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+.aside{
+    text-align: left;
+    padding-left:150px;
+}
+.section3 h1{
+    font-family: Poppins;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 58px;
+    letter-spacing: 0em;
+}
+.section3 p{
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;  
+    padding: 30px 0;  
+}
+.link2{
+    padding: 50px 0;
+}
+.link2 a{
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 100px;
+}
+.linkthree{
+    border: 2px solid whitesmoke;
+    background: #1E71FF;
+    color: #f5f5f5;
+    margin-right: 80px;
+}
+.linkfour{
+    border: 2px solid #1e71ff;
+    background: whitesmoke;
+    color: #1E71FF;
+
+}
+.img3{
+    Width: 816px;
+    Height: 592px;
+    margin-left: 0px;
+}
+.img4{
+    Width: 131.49px;
+    Height :19.13px;
+    margin-left: 0px;
+    padding-right: 20px;
+}
+.star{
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.star > div{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 161.8%;
+    vertical-align: top;
+    /* or 29px */
+    color: rgba(43, 53, 62, 0.7);
+}
+
+
+
+@media only screen and (max-width:850px){
+    *{
+        width: 100%;
+    }
+    .navbar{
+        padding: 20px;
+    }
+    .main{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: orange;
+        justify-content: center;
+        margin-top:-900px;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .mobile-menu{
+        margin-top: 0;
+    }
+    .header-content{
+        padding: 190px 30px ;
+    }
+    .sideNav h1{
+        font-size: 44px; 
+        padding-bottom: 25px;
+    }
+    .sideNav h4{
+        font-size: 11px;
+        padding-bottom: 50px;
+    }
+    .link a{
+        font-size: 9px;
+        text-align: center;
+        text-decoration: none;
+        padding: 9px 30px;
+        border-radius: 41px;
+    }
+    .linkOne{
+        margin:0 40px 0 0;
+    }
+    img{
+        width: 345px;
+        height: 379px;
+    }
+    .sideNav{
+        margin-top: 59px;
+    }
 }
