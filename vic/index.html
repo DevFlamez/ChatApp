@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="vic.css">
+    <link rel="stylesheet" href="index.css">
+    <script type="javascript"src="/index.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <script type="javascript"src="vic.js"></script>
 </head>
 <body>
     <section class="SecOne">
     <nav class="navbar">
         <div class="main">chatapp</div>
-        <ul class="navList">
+        <ul class="navlist">
             <li><a href="">Product</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">About us</a></li>
@@ -22,6 +22,27 @@
         </ul>
         <div class="bx bx-menu" id="menu-btn"></div>
     </nav> 
+
+
+    <script>
+    let menu = document.querySelector('#menu-btn');
+let navlist = document.querySelector('.navlist');
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navlist.classList.toggle('open');
+
+}
+const sr = scrollreveal({
+    distance: '65px',
+    duration:2600,
+    delay: 450,
+    reset: true
+})
+
+sr.reveal('.hero-text', {delay:200, origin:'top'});
+</script>
+
+
 
     <div class="hero">
         <div class="hero-text">
@@ -63,8 +84,7 @@
         <div>5,200 businesses use ChatApp and they rate it as 5-stars.</div></div>
         </div>
     </section>
-
-
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </body>
 </html>
