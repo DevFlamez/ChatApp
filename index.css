@@ -287,7 +287,7 @@ img{
     .navlist{
         position: absolute;
         top: 100%;
-        right: 0%;
+        right: -100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -311,7 +311,6 @@ img{
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: space-between;
-
     }
     .hero>img{
         width: 100%;
@@ -332,7 +331,18 @@ img{
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    padding:60px 6%;
 }
+.sectwo{
+    padding: 70px 6%;
+}
+.section3{
+    padding: 70px 6%;
+}
+.hero-text{
+    padding-bottom: 20px;
+}
+
  .link a{
     font-size: 10px;
     text-align: center;
